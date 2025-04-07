@@ -15,7 +15,7 @@
 
 // -----------------------------
 
- /*
+ // /*
 
 enum CompassPoint {
     case north
@@ -95,8 +95,9 @@ switch productBarcode {
 
 // */
 
-// Raw Values
+ /*
 
+// Raw Values
 enum ASCIIControlCharacter: Character {
     case tab = "\t"
     case lineFeed = "\n"
@@ -114,3 +115,5 @@ enum CompassPoint: String {
 let earthsOrder = Planet.earth.rawValue
 
 let sunsetDirection = CompassPoint.west.rawValue
+
+// */

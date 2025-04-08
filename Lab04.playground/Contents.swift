@@ -107,6 +107,21 @@ protocol Accesorios {
 }
 
 
+class SUVDeluxeHibrido:SUVHibrido, Accesorios {
+    
+    func tieneSillaDeCuero() -> Bool {
+        return true
+    }
+    
+    func tieneAireAcondicionado() -> Bool {
+        return true
+    }
+
+    override func obtenerInformacion() -> String {
+        return "SUVDeluxeHibrido"
+    }
+    
+}
 
 
 

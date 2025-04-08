@@ -40,5 +40,16 @@ persona.compliAnhos(cantidad: 2)
 
 
 
+// CASO 2
+
+enum TipoTracion {
+    case Delantera
+    case Trasera
+    case Doble
+    
+}
+
+
+
 
 

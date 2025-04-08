@@ -50,6 +50,46 @@ enum TipoTraccion {
 }
 
 
+class Vehiculo {
+
+    var marca : String = ""
+    var modelo : String = ""
+    var fabricante :String = ""
+    var anho: Int = 0
+    var nroPasajeros : Int = 0
+    
+    init(marca: String, modelo: String, fabricante: String, anho: Int, nroPasajeros: Int) {
+        self.marca = marca
+        self.modelo = modelo
+        self.fabricante = fabricante
+        self.anho = anho
+        self.nroPasajeros = nroPasajeros
+    }
+    
+    func obtenerInformacion()->String {
+        return ""
+    }
+    
+}
+
+class SUV:Vehiculo{
+
+    var tipoTraccion : TipoTraccion
+    
+    init(marca: String, modelo: String ,  fabricante: String, anho: Int, nroPasajeros: Int, tipoTraccion: TipoTraccion) {
+        self.tipoTraccion = tipoTraccion
+        super.init(marca: marca, modelo: modelo, fabricante: fabricante, anho: anho, nroPasajeros: nroPasajeros)
+    }
+    
+    override func obtenerInformacion() -> String {
+        return ""
+    }
+    
+}
+
+
+
+
 
 
 

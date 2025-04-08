@@ -99,6 +99,16 @@ class SUVHibrido : SUV {
     
 }
 
+protocol Accesorios {
+    
+    func tieneSillaDeCuero() -> Bool
+    func tieneAireAcondicionado() -> Bool
+    
+}
+
+
+
+
 
 
 

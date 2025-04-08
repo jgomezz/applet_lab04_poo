@@ -9,6 +9,7 @@
 
 // import UIKit
 
+/*
 class Persona {
     
    var nombre = ""
@@ -38,7 +39,7 @@ persona.saludar()
 persona.compliAnhos()
 persona.compliAnhos(cantidad: 2)
 
-
+*/
 
 // CASO 2
 
@@ -91,7 +92,7 @@ class SUVHibrido : SUV {
     
     var autonomiaKM:Int
     
-    init(autonomiaKM: Int,marca: String, modelo: String, fabricante: String, anho: Int, nroPasajeros: Int, tipoTraccion: TipoTraccion) {
+    init(marca: String, modelo: String, fabricante: String, anho: Int, nroPasajeros: Int, tipoTraccion: TipoTraccion,autonomiaKM: Int) {
         self.autonomiaKM = autonomiaKM
         super.init(marca: marca, modelo: modelo, fabricante: fabricante, anho: anho, nroPasajeros: nroPasajeros, tipoTraccion: tipoTraccion)
 
@@ -109,6 +110,12 @@ protocol Accesorios {
 
 class SUVDeluxeHibrido:SUVHibrido, Accesorios {
     
+    /*
+    init(marca: String, modelo: String, fabricante: String, anho: Int, nroPasajeros: Int, tipoTraccion: TipoTraccion, autonomiaKM: Int) {
+            super.init(marca: marca, modelo: modelo, fabricante: fabricante, anho: anho, nroPasajeros: nroPasajeros, tipoTraccion: tipoTraccion,autonomiaKM: autonomiaKM)
+        }
+    */
+    
     func tieneSillaDeCuero() -> Bool {
         return true
     }
@@ -124,6 +131,12 @@ class SUVDeluxeHibrido:SUVHibrido, Accesorios {
 }
 
 
+
+// MAIN
+
+let suvDeluxe = SUVDeluxeHibrido(marca: "Lexus", modelo: "RX Hybrid", fabricante: "Toyota Motors", anho: 2023, nroPasajeros: 5, tipoTraccion: .Doble, autonomiaKM: 80)
+
+print(suvDeluxe.obtenerInformacion())
 
 
 

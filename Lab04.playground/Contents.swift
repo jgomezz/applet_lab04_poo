@@ -87,6 +87,18 @@ class SUV:Vehiculo{
     
 }
 
+class SUVHibrido : SUV {
+    
+    var autonomiaKM:Int
+    
+    init(autonomiaKM: Int,marca: String, modelo: String, fabricante: String, anho: Int, nroPasajeros: Int, tipoTraccion: TipoTraccion) {
+        self.autonomiaKM = autonomiaKM
+        super.init(marca: marca, modelo: modelo, fabricante: fabricante, anho: anho, nroPasajeros: nroPasajeros, tipoTraccion: tipoTraccion)
+
+    }
+    
+}
+
 
 
 
